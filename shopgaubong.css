@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+ box-sizing: border-box;
+ 
+}
+ul{ 
+    list-style: none;
+
+}
+a{
+    text-decoration: none;
+    padding: 50px;
+    font-size: 20px;
+}
+.menu{
+    height: 64px;
+    background-color: pink;
+    display: flex;
+    align-items: center;
+}
+
+.menu-search{
+    border: 1px solid white;
+    width: 400px;
+    border-radius: 4px;
+    background-color: white;
+}
+.menu_search-input{
+    height: 50%;
+    width: 50%;
+    border: none;
+}
+.header-nav{
+    margin-left: 5px;
+
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.shopgaubong{
+    margin-right: 5px;
+    font-size: 35px;
+    font-family: brush script mt;
+}
+
+.adress-form{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: none;
+    z-index: 999;
+}
+.adress-form-content{
+    width: 400px;
+    height: 530px;
+    background-color: #fff ;
+    border-radius: 5px;
+}
+.adress-form-content form{
+    padding: 0 40px;
+
+}
+.adress-form-content h1{
+    font-size: 16px;
+    padding: 12px 0;
+    border-bottom:1px solid #ddd ;
+    position: relative;
+}
+.adress-form-content h1 span{
+    display: block;
+    position: absolute;
+    height: 30px;
+    padding: 0 6px;
+    border: 1px solid #ddd;
+    right: 12px;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 30px;
+    color: #333;
+    border-radius: 5px;
+}
+.adress-form-content form p{
+    font-size: 16px;
+
+}
+.adress-form-content form input, select{
+    height: 45px;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    padding: 6px;
+    border-radius: 5px;
+}
+.adress-form-content form button{
+    margin-top: 20px;
+    height: 40px;
+    width: 80%;
+    cursor: pointer;
+    background-color: #ff9838;
+    outline: none;
+    border: none;
+    color: #fff;
+}
+.giohang{
+    position: relative;
+}
+.submenu{
+    position: absolute;
+    background-color: #ddd;
+    width: 300px;
+    height: auto;
+    display: none;
+}
+.submenu ul{
+    display: flex;
+    flex-direction: column;
+}
+.submenu ul li{
+padding: 6px 0;
+}
+.submenu ul li:hover a{
+   color: pink;
+}
+.submenu ul li:hover{
+    background: none;
+}
+.header-nav ul li:hover .submenu{
+    display: block;
+}
+.product .heading{
+    height: 40px;
+    text-align: center;
+    padding: 5px;
+    background-color: rgb(216, 208, 244);
+    color: rgb(105, 14, 44);
+}
+.product .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.product .box-container .box{
+    flex: 1 1 1;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 1);
+    position: relative;
+    padding: 10px;
+}
+.product .box-container .box .discount{
+    position: absolute;
+    top: 1rem; left: 1rem;
+    padding: .7rem 1rem;
+    font-size: 2rem;
+    color: red;
+    background: rgba(0, 0, 0, 0.05);
+    z-index: 1;
+    border-radius: .5rem;
+}
+.product .box-container .box .image{
+    position: relative;
+    text-align: center;
+    padding-top: 2rem ;
+    overflow: hidden;
+}
+.product .box-container .box .image img{
+height: 20rem;;
+}
+.product .box-container .box:hover .image img{
+    transform: scale(1.1);
+}
+.footer{
+    background-color: pink;
+    width: auto;
+    padding: 60px;
+    margin: 30px;
+    font-size: 30px;
+}
+.zoom img{
+    display:block;
+    transition: all .3s ease;
+  }
+  .zoom img:hover{
+    transform: scale(1.05);
+  } 
+  .zoom div{
+    display:block;
+    overflow: hidden;
+  }
+  

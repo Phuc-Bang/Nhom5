@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Sản Phẩm</title>
+    <link rel="stylesheet" href="ctsp.css">
+</head>
+<body>
+    <span class="discount">-10%</span>
+    <div class="product">
+        <div class="left-column">
+        <img src="https://cf.shopee.vn/file/7e41ed938654c0a843d3de08eb866e55" alt="Hình ảnh sản phẩm" class="product-image">
+        </div>
+        <div class="right-column">
+        <h1>Gấu bông hình con vịt vô tri</h1>
+        <p class="price">Giá: 139.000đ - 372.000đ</p>
+        <p class="description">
+            Đây là một sản phẩm tuyệt vời với chất lượng cao và giá cả phải chăng. Sản phẩm được làm từ chất liệu cao cấp, bền đẹp và tiện dụng. Rất thích hợp để đem tặng cho những người mình yêu.
+        </p>
+        <ul class="details">
+            <p>Mô tả sản phẩm</p>
+            <li>Xuất xứ: Trung Quốc</li>
+            <li>Tên tổ chức chịu trách nhiệm sản xuất: Đang cập nhật</li>
+            <li>Chiều dài:190cm</li>
+            <li>Nhân vật: Ngỗng</li>
+            <li>Chất liệu: Pp Cotton</li>
+            <li>Số lượng hàng khuyến mãi:111</li>
+            <li>Gửi từ Nước ngoài</li>
+        </ul>
+        <button id="buyButton">Mua hàng</button>
+        </div>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-button">&times;</span>
+            <h2>Lựa chọn sản phẩm</h2>
+            <label for="category">Phân loại:</label>
+            <select id="category">
+                <option value="vịt màu trắng">vịt màu trắng</option>
+                <option value="vịt màu vàng">vịt màu vàng</option>
+            </select>
+
+            <label for="quantity">Số lượng:</label>
+            <input type="number" id="quantity" value="1" min="1">
+
+            <button id="checkoutButton">Thanh toán</button>
+        </div>
+    </div>
+
+    <script src="ctsp.js"></script>
+    
+</body>
+<div class="shop-avatar">
+    <img src="https://toigingiuvedep.vn/wp-content/uploads/2022/03/anh-avatar-gau-cap-doi-ga-bong.jpg" alt="Shop Avatar">
+    <div class="button-container">
+        <a href="shopgaubong.html" class="shop-button">Truy Cập</a>
+        <button class="shop-button follow-button" id="followButton">Theo Dõi</button>
+        <button class="shop-button" id="chatButton">Chat</button>
+    </div>
+</div>
+<div class="chat-popup" id="chatPopup">
+    <div class="chat-header">
+        <span>Chat với khách hàng</span>
+        <button id="closeChat" class="close-chat">X</button>
+    </div>
+    <div class="chat-body">
+        <p>Xin chào! Shop có thể giúp gì cho bạn?</p>
+        <!-- Chat messages will go here -->
+    </div>
+    <div class="chat-footer">
+        <input type="text" id="chatInput" placeholder="Nhập tin nhắn...">
+        <button id="sendButton">Gửi</button>
+    </div>
+</div>
+<script src="theodoi.js"></script>
+<h2>Shop Gấu bông</h2>
+<footer>
+    <div class="review-form">
+        <h1>Đánh Giá</h1>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="rating">Rating:</label>
+        <div class="star-rating">
+            <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
+            <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+            <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+            <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+            <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
+        </div>
+
+        <label for="comment">Comment:</label>
+        <textarea id="comment" name="comment" rows="4" required></textarea>
+
+        <button type="button" onclick="submitReview()">Submit Review</button>
+    </div>
+
+    <div id="reviews"></div>
+
+    <script>
+        function submitReview() {
+            var username = document.getElementById('username').value;
+            var rating = document.querySelector('input[name="rating"]:checked').value;
+            var comment = document.getElementById('comment').value;
+
+            if (!username || !rating || !comment) {
+                alert('Please fill out all fields.');
+                return;
+            }
+
+            var reviewContainer = document.getElementById('reviews');
+            var review = document.createElement('div');
+            review.className = 'review';
+
+            var reviewContent = `
+                <h3>${username} - Rating: ${rating}/5</h3>
+                <p>${comment}</p>
+            `;
+            review.innerHTML = reviewContent;
+
+            reviewContainer.appendChild(review);
+
+            document.getElementById('username').value = '';
+            document.querySelector('input[name="rating"]:checked').checked = false;
+            document.getElementById('comment').value = '';
+        }
+    </script>
+</footer>
+</html>

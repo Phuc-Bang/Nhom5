@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shop ban gau bong</title>
+    <!-- Link Bootstrap CSS từ CDN -->
+    <link rel="stylesheet" href="shopgaubong.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <!-- CSS tùy chỉnh -->
+  <style>
+    .banner {
+      height: 450px;
+      background-image: url('https://i.ytimg.com/vi/yzm5iZuELHw/maxresdefault.jpg');
+      background-size: cover;
+      background-position: center;
+      color: #ffffff;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .feature {
+      padding: 80px 0;
+    }
+  </style>
+  <!-- Banner toàn màn hình -->
+<section class="banner">
+  <div class="container">
+    <h1>Welcome to My Shop bears</h1>
+    <p>Đặt hàng ngay!! khuyến mãi lên đến 50%.</p>
+  </div>
+</section>
+</head>
+<body>
+    <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Shop Gấu Bông</a>
+    <form action="tìm kiếm.html" method="get">
+        <input type="text" id="search" name="search" placeholder="Nhập từ khóa tìm kiếm...">
+        <button type="submit">Tìm kiếm</button>
+      </form>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        
+      <ul class="navbar-nav ml-auto">
+        <nav class="header-nav">
+          <ul>
+          <li><a href="#" ><img class="home" >Trang chủ</a></li>
+          <li><a href="#" ><img class="giohang" >Sản phẩm</a>
+          <div class="submenu">
+              <ul>
+                  <li><a href="">Gấu Bông Cute</a></li>
+                  <li><a href="ctsp.html">Gấu Bông Vịt vô tri</a></li>
+                  <li><a href="">Gấu Bông Con Heo</a></li>
+                  <li><a href="">Gấu Bông Thỏ lolita</a></li>
+                  <li><a href="">Gấu Bông Quả Bơ</a></li>
+                  <li><a href="">Gấu Bông kuromi, cinnamoroll</a></li>
+                  <li><a href="">Gấu Bông Con Dog</a></li>
+                  <li><a href="">set quà valetine</a></li>
+              </ul>
+          </div>
+          
+          </li>
+          <li id="adress-form"><a href="#" ><img class="lienhe">Đặt Hàng</a></li>
+         <div class="adress-form">
+              <div class="adress-form-content">
+                  <h1>THÔNG TIN KHÁCH HÀNG <span id="adress-close">X Đóng</span></h1>
+                  <form action="">
+        <input type="ho ten" id="name" name="name" placeholder="Họ và tên" required>
+                      <input type="text" placeholder="Sdt" required>
+                      <label for=""></label>
+                      <select name="" id="">
+                          <option value="#">chọn địa điểm</option>
+                          <option value="#">Hà Nội</option>
+                          <option value="#">Thành Phố Hồ Chí Minh</option>
+                      </select>
+                      <label for=""></label>
+                      <select name="" id="">
+                          <option value="#">Chọn Quận, Huyện</option>
+                          <option value="#">quận huyện A</option>
+                          <option value="#">quận huyện B</option>
+                      </select>
+                      <label for=""></label>
+                      <select name="" id="">
+                          <option value="#">Chọn Phường, Xã</option>
+                          <option value="#">phường,xã A</option>
+                          <option value="#">phường,xã B</option>
+                      </select>
+                      <input type="text" placeholder="số nhà, tên đường" required>
+                      <button>Xác Nhận</button>
+                  </form>
+          </div>
+      </ul>
+        </nav> 
+    </div>
+  </nav>
+  <section class="product" id="product">
+    <h2 class="heading">Mặt Hàng Nổi Bật</h2>
+    <div class="box-container"><br>
+        <div class="box">
+            <span class="discount">-10%</span>
+            <div class="img">
+                <div class="zoom"><img src="https://cf.shopee.vn/file/7e41ed938654c0a843d3de08eb866e55" alt="" width="500"></div>
+                </div>
+                <div class="content">
+                    <h3>Gấu bông hình con vịt vô tri</h3>
+                    <div class="price">139.000đ - <span>372.000đ</span></div>
+                 </div>
+                </div>
+            
+            
+        <div class="box">
+    <span class="discount">-20%</span>
+    <div class="img">
+        <div class="zoom"><img src="https://cf.shopee.vn/file/sg-11134201-22110-8f2wdmi25ljvd9" alt="" width="500"></div>
+        </div>
+        <div class="content">
+            <h3>Gấu Dâu</h3>
+            <div class="price">123.000đ - <span>345.000đ</span></div>
+         </div>
+    </div>
+    <div class="box">
+    <span class="discount">-10%</span>
+    <div class="img">
+        <div class="zoom"><img src="https://gaubongonline.com.vn/wp-content/uploads/2022/01/Tho-co-dau.jpg" alt="" width="500"></div>
+        </div>
+        <div class="content">
+            <h3>Gấu bông con thỏ lolita</h3>
+            <div class="price">152.000đ - <span>306.000đ</span></div>
+         </div>
+     </div>
+  
+  <div class="box">
+    <span class="discount">-50%</span>
+    <div class="img">
+        <div class="zoom"><img src="https://gaubongmino.com/wp-content/uploads/2021/10/gau-bong-bo-dai-a4.jpg" alt="" width="500"></div>
+        </div>
+        <div class="content">
+            <h3>Gấu bông hình quả bơ</h3>
+            <div class="price">88.000đ - <span>199.000đ</span></div>
+         </div>
+    </div>
+     
+  
+  
+  <div class="box">
+    <span class="discount">-30%</span>
+    <div class="img">
+        <div class="zoom"><img src="https://cf.shopee.vn/file/d29cec496ba664c30bff19e817169dd7" alt="" width="500"></div>
+        </div>
+        <div class="content">
+            <h3>Gấu bông Con heo cầm bình sữa đáng iu</h3>
+            <div class="price">207.000đ - <span>462.000đ</span></div>
+         </div>
+    </div>
+     
+  
+  <div class="box">
+    <span class="discount">-40%</span>
+    <div class="img">
+        <div class="zoom"><img src="https://i0.wp.com/hapigo.vn/wp-content/uploads/2022/11/Optimized-gau-bong-hinh-con-heo-11.jpg" alt="" width="500"></div>
+        </div>
+        <div class="content">
+            <h3>Gấu bông Con heo hồng</h3>
+            <div class="price">99.000đ - <span>180.000đ</span></div>
+         </div>
+    </div>
+    <div class="box">
+        <span class="discount">-10%</span>
+        <div class="img">
+            <div class="zoom"><img src="https://gaubongonline.vn/wp-content/uploads/2022/11/Kuromi-om-gau-4.jpg" alt="" width="500"></div>
+            </div>
+            <div class="content">
+                <h3>Gấu bông kuromi,melody</h3>
+                <div class="price">139.000đ - <span>679.000đ</span></div>
+             </div>
+        </div>
+        <div class="box">
+            <span class="discount">-20%</span>
+            <div class="img">
+                <div class="zoom"> <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-llohmswofopr64" alt="" width="500"></div>
+                </div>
+                <div class="content">
+                    <h3>Gấu bông cinnamoroll</h3>
+                    <div class="price">99.000đ - <span>219.000đ</span></div>
+                 </div>
+            </div>
+            <div class="box">
+                <span class="discount">-50%</span>
+                <div class="img">
+                    <div class="zoom"> <img src="https://pos.nvncdn.com/71e899-15049/ps/20240113_mk8mqSY6Gy.png" alt="" width="500"></div>
+                    </div>
+                    <div class="content">
+                        <h3>Gấu bông capybara</h3>
+                        <div class="price">33.000đ - <span>127.000đ</span></div>
+                     </div>
+                </div>
+                <div class="box">
+                    <span class="discount">-20%</span>
+                    <div class="img">
+                        <div class="zoom"> <img src="https://cf.shopee.vn/file/742c6187396fad04bcbad788c383e2ea" alt="" width="500"></div>
+                        </div>
+                        <div class="content">
+                            <h3>Gấu bông hình con chim cánh cụt cute</h3>
+                            <div class="price">104.000đ - <span>195.000đ</span></div>
+                         </div>
+                    </div>
+                    <div class="box">
+                        <span class="discount">-10%</span>
+                        <div class="img">
+                            <div class="zoom">  <img src="https://gaubongonline.vn/wp-content/uploads/2022/09/teddy-logo-baby-5.jpg" alt="" width="500"></div>
+                            </div>
+                            <div class="content">
+                                <h3>Gấu bông Teddy bigsize</h3>
+                                <div class="price">186.000đ - <span>893.000đ</span></div>
+                             </div>
+                        </div>
+                        <div class="box">
+                            <span class="discount">-30%</span>
+                            <div class="img">
+                                <div class="zoom">   <img src="https://files.shopeeanalytics.com/upload/images/2023/10/11/image-1.jpg" alt="" width="400" ></div>
+                                </div>
+                                <div class="content">
+                                    <h3>Bó Hoa Gấu bông tặng dịp valentine </h3>
+                                    <div class="price">33.000đ - <span>127.000đ</span></div>
+                                 </div>
+                            </div>
+    </div>
+
+</section>
+
+<footer class="footer">
+<h7>CHĂM SÓC KHÁCH HÀNG</h7>
+<div class="space"></div>
+<div class="icon">
+<img src="https://tse3.mm.bing.net/th?id=OIP.MPKf87cde-wwiWLT16vtHgHaHa&pid=Api&P=0&h=180" width="40px">Hotline: <span>1900.6769</span></a>
+<div class="space"></div>
+<img src="https://png.pngtree.com/png-clipart/20210620/original/pngtree-5-star-design-png-image_6445170.jpg" width="30px">Đánh Giá Sản Phẩm</a>
+</div>
+</footer>
+  <script src="script.js"></script>
+</body>
+</html>
